@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - Basketball Equipment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>MyShop</h1>
+            <input type="text" placeholder="Search for products..." id="search-input">
+            <button id="login-btn">Login</button>
+            <button id="cart-btn">Panier</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filters">
+            <select name="collection" id="collection">
+                <option value="all">Collection</option>
+                <!-- Ajouter d'autres options ici -->
+            </select>
+            <select name="color" id="color">
+                <option value="all">Color</option>
+                <!-- Ajouter d'autres options ici -->
+            </select>
+            <select name="category" id="category">
+                <option value="all">Category</option>
+                <!-- Ajouter d'autres options ici -->
+            </select>
+            <select name="price-range" id="price-range">
+                <option value="all">Price Range</option>
+                <!-- Ajouter d'autres options ici -->
+            </select>
+        </section>
+
+        <section class="products">
+            <div class="product">
+                <img src="spalding-nba-ball.jpg" alt="Spalding NBA Basketball">
+                <p>Spalding NBA Basketball</p>
+                <p>$30.00</p>
+            </div>
+            <div class="product">
+                <img src="houston-rockets-court.jpg" alt="Basketball Court">
+                <p>Basketball Court</p>
+                <p>$25000.00</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
