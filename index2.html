@@ -1,0 +1,31 @@
+<div class="container" id="loginForm">
+    <h2>Login</h2>
+    <input type="email" class="input-field" placeholder="Email" required>
+    <input type="password" class="input-field" placeholder="Password" required>
+    <button class="button">Login</button>
+    <p class="toggle-link" onclick="showRegister()">Don't have an account? Register</p>
+</div>
+
+<div class="container" id="registerForm" style="display: none;">
+    <h2>Register</h2>
+    <input type="text" class="input-field" placeholder="Username" required>
+    <input type="email" class="input-field" placeholder="Email" required>
+    <input type="password" class="input-field" placeholder="Password" required>
+    <input type="password" class="input-field" placeholder="Confirm Password" required>
+    <button class="button">Register</button>
+    <p class="toggle-link" onclick="showLogin()">Already have an account? Login</p>
+</div>
+<script>
+    function showRegister() {
+        document.getElementById('loginForm').style.display = 'none';
+        document.getElementById('registerForm').style.display = 'block';
+    }
+
+    function showLogin() {
+        document.getElementById('loginForm').style.display = 'block';
+        document.getElementById('registerForm').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
